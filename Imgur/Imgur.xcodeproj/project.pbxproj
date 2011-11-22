@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FBB42B01477359400EA3814 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBB42AF1477359400EA3814 /* UIKit.framework */; };
+		4FBB42B21477359400EA3814 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBB42B11477359400EA3814 /* Foundation.framework */; };
+		4FBB42B41477359400EA3814 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBB42B31477359400EA3814 /* CoreGraphics.framework */; };
+		4FBB42BA1477359400EA3814 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FBB42B81477359400EA3814 /* InfoPlist.strings */; };
+		4FBB42BC1477359400EA3814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB42BB1477359400EA3814 /* main.m */; };
+		4FBB42C01477359400EA3814 /* ImgurAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB42BF1477359400EA3814 /* ImgurAppDelegate.m */; };
+		4FBB42C31477359400EA3814 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FBB42C11477359400EA3814 /* MainWindow.xib */; };
+		4FBB42CD147736D000EA3814 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB42CB147736D000EA3814 /* PageViewController.m */; };
+		4FBB42CE147736D000EA3814 /* PageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FBB42CC147736D000EA3814 /* PageViewController.xib */; };
+		4FBB42E2147748C900EA3814 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB42E1147748C900EA3814 /* XMLReader.m */; };
+		4FBB42E4147760FD00EA3814 /* xmlfile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4FBB42E3147760FD00EA3814 /* xmlfile.xml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4FBB42AB1477359400EA3814 /* Imgur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imgur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FBB42AF1477359400EA3814 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4FBB42B11477359400EA3814 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4FBB42B31477359400EA3814 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4FBB42B71477359400EA3814 /* Imgur-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Imgur-Info.plist"; sourceTree = "<group>"; };
+		4FBB42B91477359400EA3814 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FBB42BB1477359400EA3814 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FBB42BD1477359400EA3814 /* Imgur-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Imgur-Prefix.pch"; sourceTree = "<group>"; };
+		4FBB42BE1477359400EA3814 /* ImgurAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImgurAppDelegate.h; sourceTree = "<group>"; };
+		4FBB42BF1477359400EA3814 /* ImgurAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImgurAppDelegate.m; sourceTree = "<group>"; };
+		4FBB42C21477359400EA3814 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		4FBB42CA147736D000EA3814 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		4FBB42CB147736D000EA3814 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		4FBB42CC147736D000EA3814 /* PageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageViewController.xib; sourceTree = "<group>"; };
+		4FBB42E0147748C900EA3814 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		4FBB42E1147748C900EA3814 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		4FBB42E3147760FD00EA3814 /* xmlfile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = xmlfile.xml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FBB42A81477359400EA3814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FBB42B01477359400EA3814 /* UIKit.framework in Frameworks */,
+				4FBB42B21477359400EA3814 /* Foundation.framework in Frameworks */,
+				4FBB42B41477359400EA3814 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FBB42A01477359400EA3814 = {
+			isa = PBXGroup;
+			children = (
+				4FBB42DF147748AF00EA3814 /* Pages XML Reader */,
+				4FBB42C91477369F00EA3814 /* View Controllers */,
+				4FBB42B51477359400EA3814 /* Imgur */,
+				4FBB42AE1477359400EA3814 /* Frameworks */,
+				4FBB42AC1477359400EA3814 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FBB42AC1477359400EA3814 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FBB42AB1477359400EA3814 /* Imgur.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FBB42AE1477359400EA3814 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FBB42AF1477359400EA3814 /* UIKit.framework */,
+				4FBB42B11477359400EA3814 /* Foundation.framework */,
+				4FBB42B31477359400EA3814 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FBB42B51477359400EA3814 /* Imgur */ = {
+			isa = PBXGroup;
+			children = (
+				4FBB42BE1477359400EA3814 /* ImgurAppDelegate.h */,
+				4FBB42BF1477359400EA3814 /* ImgurAppDelegate.m */,
+				4FBB42C11477359400EA3814 /* MainWindow.xib */,
+				4FBB42B61477359400EA3814 /* Supporting Files */,
+			);
+			path = Imgur;
+			sourceTree = "<group>";
+		};
+		4FBB42B61477359400EA3814 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FBB42B71477359400EA3814 /* Imgur-Info.plist */,
+				4FBB42E3147760FD00EA3814 /* xmlfile.xml */,
+				4FBB42B81477359400EA3814 /* InfoPlist.strings */,
+				4FBB42BB1477359400EA3814 /* main.m */,
+				4FBB42BD1477359400EA3814 /* Imgur-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FBB42C91477369F00EA3814 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FBB42CA147736D000EA3814 /* PageViewController.h */,
+				4FBB42CB147736D000EA3814 /* PageViewController.m */,
+				4FBB42CC147736D000EA3814 /* PageViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4FBB42DF147748AF00EA3814 /* Pages XML Reader */ = {
+			isa = PBXGroup;
+			children = (
+				4FBB42E0147748C900EA3814 /* XMLReader.h */,
+				4FBB42E1147748C900EA3814 /* XMLReader.m */,
+			);
+			name = "Pages XML Reader";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FBB42AA1477359400EA3814 /* Imgur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FBB42C61477359400EA3814 /* Build configuration list for PBXNativeTarget "Imgur" */;
+			buildPhases = (
+				4FBB42A71477359400EA3814 /* Sources */,
+				4FBB42A81477359400EA3814 /* Frameworks */,
+				4FBB42A91477359400EA3814 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Imgur;
+			productName = Imgur;
+			productReference = 4FBB42AB1477359400EA3814 /* Imgur.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FBB42A21477359400EA3814 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4FBB42A51477359400EA3814 /* Build configuration list for PBXProject "Imgur" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4FBB42A01477359400EA3814;
+			productRefGroup = 4FBB42AC1477359400EA3814 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FBB42AA1477359400EA3814 /* Imgur */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FBB42A91477359400EA3814 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FBB42BA1477359400EA3814 /* InfoPlist.strings in Resources */,
+				4FBB42C31477359400EA3814 /* MainWindow.xib in Resources */,
+				4FBB42CE147736D000EA3814 /* PageViewController.xib in Resources */,
+				4FBB42E4147760FD00EA3814 /* xmlfile.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FBB42A71477359400EA3814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FBB42BC1477359400EA3814 /* main.m in Sources */,
+				4FBB42C01477359400EA3814 /* ImgurAppDelegate.m in Sources */,
+				4FBB42CD147736D000EA3814 /* PageViewController.m in Sources */,
+				4FBB42E2147748C900EA3814 /* XMLReader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4FBB42B81477359400EA3814 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FBB42B91477359400EA3814 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4FBB42C11477359400EA3814 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FBB42C21477359400EA3814 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FBB42C41477359400EA3814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4FBB42C51477359400EA3814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FBB42C71477359400EA3814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Imgur/Imgur-Prefix.pch";
+				INFOPLIST_FILE = "Imgur/Imgur-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4FBB42C81477359400EA3814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Imgur/Imgur-Prefix.pch";
+				INFOPLIST_FILE = "Imgur/Imgur-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FBB42A51477359400EA3814 /* Build configuration list for PBXProject "Imgur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FBB42C41477359400EA3814 /* Debug */,
+				4FBB42C51477359400EA3814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FBB42C61477359400EA3814 /* Build configuration list for PBXNativeTarget "Imgur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FBB42C71477359400EA3814 /* Debug */,
+				4FBB42C81477359400EA3814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FBB42A21477359400EA3814 /* Project object */;
+}
