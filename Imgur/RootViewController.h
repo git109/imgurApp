@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "GalleryViewController.h"
+#import "SignInViewController.h"
 
 @interface RootViewController : UIViewController {
     GalleryViewController *galleryController;
 }
 
 @property (nonatomic, retain) GalleryViewController *galleryController;
-
 
 - (IBAction)goToGallery:(id)sender;
 

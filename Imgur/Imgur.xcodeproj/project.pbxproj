@@ -163,6 +163,9 @@
 /* Begin PBXProject section */
 		4FBB42A21477359400EA3814 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 4FBB42A51477359400EA3814 /* Build configuration list for PBXProject "Imgur" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
