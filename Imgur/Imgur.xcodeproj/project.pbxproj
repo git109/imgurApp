@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F71A179147E063E007C7473 /* GalleryPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F71A177147E063E007C7473 /* GalleryPagesController.m */; };
+		4F71A17A147E063E007C7473 /* GalleryPagesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F71A178147E063E007C7473 /* GalleryPagesController.xib */; };
 		4FAD273C147DD53400447292 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD273A147DD53400447292 /* RootViewController.m */; };
 		4FAD273D147DD53400447292 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD273B147DD53400447292 /* RootViewController.xib */; };
 		4FAD274E147DD63500447292 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD274C147DD63500447292 /* GalleryViewController.m */; };
@@ -22,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F71A176147E063D007C7473 /* GalleryPagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryPagesController.h; sourceTree = "<group>"; };
+		4F71A177147E063E007C7473 /* GalleryPagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryPagesController.m; sourceTree = "<group>"; };
+		4F71A178147E063E007C7473 /* GalleryPagesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryPagesController.xib; sourceTree = "<group>"; };
 		4FAD2739147DD53400447292 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		4FAD273A147DD53400447292 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		4FAD273B147DD53400447292 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
@@ -117,6 +122,9 @@
 				4FAD274B147DD63500447292 /* GalleryViewController.h */,
 				4FAD274C147DD63500447292 /* GalleryViewController.m */,
 				4FAD274D147DD63500447292 /* GalleryViewController.xib */,
+				4F71A176147E063D007C7473 /* GalleryPagesController.h */,
+				4F71A177147E063E007C7473 /* GalleryPagesController.m */,
+				4F71A178147E063E007C7473 /* GalleryPagesController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -181,6 +189,7 @@
 				4FBB42C31477359400EA3814 /* MainWindow.xib in Resources */,
 				4FAD273D147DD53400447292 /* RootViewController.xib in Resources */,
 				4FAD274F147DD63500447292 /* GalleryViewController.xib in Resources */,
+				4F71A17A147E063E007C7473 /* GalleryPagesController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +205,7 @@
 				4FBB42E2147748C900EA3814 /* XMLReader.m in Sources */,
 				4FAD273C147DD53400447292 /* RootViewController.m in Sources */,
 				4FAD274E147DD63500447292 /* GalleryViewController.m in Sources */,
+				4F71A179147E063E007C7473 /* GalleryPagesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
