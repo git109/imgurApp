@@ -38,6 +38,10 @@
     [self.view addSubview:self.galleryController.view];
 }
 
+- (void)viewWillAppear {
+    [self reloadInputViews];
+}
+
 
 #pragma mark - View lifecycle
 
