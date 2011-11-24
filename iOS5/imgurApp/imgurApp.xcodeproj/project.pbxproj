@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0808DCC3147EFEF0006569D2 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0808DCC2147EFEF0006569D2 /* SignInViewController.m */; };
+		088BAE33147EFC9C00CCBCA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088BAE32147EFC9C00CCBCA4 /* UIKit.framework */; };
+		088BAE35147EFC9C00CCBCA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088BAE34147EFC9C00CCBCA4 /* Foundation.framework */; };
+		088BAE37147EFC9C00CCBCA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088BAE36147EFC9C00CCBCA4 /* CoreGraphics.framework */; };
+		088BAE3D147EFC9C00CCBCA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 088BAE3B147EFC9C00CCBCA4 /* InfoPlist.strings */; };
+		088BAE3F147EFC9C00CCBCA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 088BAE3E147EFC9C00CCBCA4 /* main.m */; };
+		088BAE43147EFC9C00CCBCA4 /* imgurAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 088BAE42147EFC9C00CCBCA4 /* imgurAppAppDelegate.m */; };
+		088BAE46147EFC9C00CCBCA4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088BAE44147EFC9C00CCBCA4 /* MainStoryboard.storyboard */; };
+		088BAE49147EFC9C00CCBCA4 /* imgurAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 088BAE48147EFC9C00CCBCA4 /* imgurAppViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0808DCC1147EFEF0006569D2 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		0808DCC2147EFEF0006569D2 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		088BAE2E147EFC9C00CCBCA4 /* imgurApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imgurApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		088BAE32147EFC9C00CCBCA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		088BAE34147EFC9C00CCBCA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		088BAE36147EFC9C00CCBCA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		088BAE3A147EFC9C00CCBCA4 /* imgurApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "imgurApp-Info.plist"; sourceTree = "<group>"; };
+		088BAE3C147EFC9C00CCBCA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		088BAE3E147EFC9C00CCBCA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		088BAE40147EFC9C00CCBCA4 /* imgurApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "imgurApp-Prefix.pch"; sourceTree = "<group>"; };
+		088BAE41147EFC9C00CCBCA4 /* imgurAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imgurAppAppDelegate.h; sourceTree = "<group>"; };
+		088BAE42147EFC9C00CCBCA4 /* imgurAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imgurAppAppDelegate.m; sourceTree = "<group>"; };
+		088BAE45147EFC9C00CCBCA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		088BAE47147EFC9C00CCBCA4 /* imgurAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imgurAppViewController.h; sourceTree = "<group>"; };
+		088BAE48147EFC9C00CCBCA4 /* imgurAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imgurAppViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		088BAE2B147EFC9C00CCBCA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088BAE33147EFC9C00CCBCA4 /* UIKit.framework in Frameworks */,
+				088BAE35147EFC9C00CCBCA4 /* Foundation.framework in Frameworks */,
+				088BAE37147EFC9C00CCBCA4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		088BAE23147EFC9C00CCBCA4 = {
+			isa = PBXGroup;
+			children = (
+				088BAE38147EFC9C00CCBCA4 /* imgurApp */,
+				088BAE31147EFC9C00CCBCA4 /* Frameworks */,
+				088BAE2F147EFC9C00CCBCA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		088BAE2F147EFC9C00CCBCA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				088BAE2E147EFC9C00CCBCA4 /* imgurApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		088BAE31147EFC9C00CCBCA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				088BAE32147EFC9C00CCBCA4 /* UIKit.framework */,
+				088BAE34147EFC9C00CCBCA4 /* Foundation.framework */,
+				088BAE36147EFC9C00CCBCA4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		088BAE38147EFC9C00CCBCA4 /* imgurApp */ = {
+			isa = PBXGroup;
+			children = (
+				088BAE41147EFC9C00CCBCA4 /* imgurAppAppDelegate.h */,
+				088BAE42147EFC9C00CCBCA4 /* imgurAppAppDelegate.m */,
+				088BAE44147EFC9C00CCBCA4 /* MainStoryboard.storyboard */,
+				088BAE47147EFC9C00CCBCA4 /* imgurAppViewController.h */,
+				088BAE48147EFC9C00CCBCA4 /* imgurAppViewController.m */,
+				0808DCC1147EFEF0006569D2 /* SignInViewController.h */,
+				0808DCC2147EFEF0006569D2 /* SignInViewController.m */,
+				088BAE39147EFC9C00CCBCA4 /* Supporting Files */,
+			);
+			path = imgurApp;
+			sourceTree = "<group>";
+		};
+		088BAE39147EFC9C00CCBCA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				088BAE3A147EFC9C00CCBCA4 /* imgurApp-Info.plist */,
+				088BAE3B147EFC9C00CCBCA4 /* InfoPlist.strings */,
+				088BAE3E147EFC9C00CCBCA4 /* main.m */,
+				088BAE40147EFC9C00CCBCA4 /* imgurApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		088BAE2D147EFC9C00CCBCA4 /* imgurApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 088BAE4C147EFC9C00CCBCA4 /* Build configuration list for PBXNativeTarget "imgurApp" */;
+			buildPhases = (
+				088BAE2A147EFC9C00CCBCA4 /* Sources */,
+				088BAE2B147EFC9C00CCBCA4 /* Frameworks */,
+				088BAE2C147EFC9C00CCBCA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imgurApp;
+			productName = imgurApp;
+			productReference = 088BAE2E147EFC9C00CCBCA4 /* imgurApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		088BAE25147EFC9C00CCBCA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 088BAE28147EFC9C00CCBCA4 /* Build configuration list for PBXProject "imgurApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 088BAE23147EFC9C00CCBCA4;
+			productRefGroup = 088BAE2F147EFC9C00CCBCA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				088BAE2D147EFC9C00CCBCA4 /* imgurApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		088BAE2C147EFC9C00CCBCA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088BAE3D147EFC9C00CCBCA4 /* InfoPlist.strings in Resources */,
+				088BAE46147EFC9C00CCBCA4 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		088BAE2A147EFC9C00CCBCA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088BAE3F147EFC9C00CCBCA4 /* main.m in Sources */,
+				088BAE43147EFC9C00CCBCA4 /* imgurAppAppDelegate.m in Sources */,
+				088BAE49147EFC9C00CCBCA4 /* imgurAppViewController.m in Sources */,
+				0808DCC3147EFEF0006569D2 /* SignInViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		088BAE3B147EFC9C00CCBCA4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				088BAE3C147EFC9C00CCBCA4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		088BAE44147EFC9C00CCBCA4 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				088BAE45147EFC9C00CCBCA4 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		088BAE4A147EFC9C00CCBCA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		088BAE4B147EFC9C00CCBCA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		088BAE4D147EFC9C00CCBCA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "imgurApp/imgurApp-Prefix.pch";
+				INFOPLIST_FILE = "imgurApp/imgurApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		088BAE4E147EFC9C00CCBCA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "imgurApp/imgurApp-Prefix.pch";
+				INFOPLIST_FILE = "imgurApp/imgurApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		088BAE28147EFC9C00CCBCA4 /* Build configuration list for PBXProject "imgurApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088BAE4A147EFC9C00CCBCA4 /* Debug */,
+				088BAE4B147EFC9C00CCBCA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		088BAE4C147EFC9C00CCBCA4 /* Build configuration list for PBXNativeTarget "imgurApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				088BAE4D147EFC9C00CCBCA4 /* Debug */,
+				088BAE4E147EFC9C00CCBCA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 088BAE25147EFC9C00CCBCA4 /* Project object */;
+}
