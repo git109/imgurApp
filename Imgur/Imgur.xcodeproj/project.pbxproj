@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FAD273C147DD53400447292 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD273A147DD53400447292 /* RootViewController.m */; };
+		4FAD273D147DD53400447292 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD273B147DD53400447292 /* RootViewController.xib */; };
+		4FAD274E147DD63500447292 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAD274C147DD63500447292 /* GalleryViewController.m */; };
+		4FAD274F147DD63500447292 /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FAD274D147DD63500447292 /* GalleryViewController.xib */; };
 		4FBB42B01477359400EA3814 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBB42AF1477359400EA3814 /* UIKit.framework */; };
 		4FBB42B21477359400EA3814 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBB42B11477359400EA3814 /* Foundation.framework */; };
 		4FBB42B41477359400EA3814 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBB42B31477359400EA3814 /* CoreGraphics.framework */; };
@@ -14,13 +18,16 @@
 		4FBB42BC1477359400EA3814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB42BB1477359400EA3814 /* main.m */; };
 		4FBB42C01477359400EA3814 /* ImgurAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB42BF1477359400EA3814 /* ImgurAppDelegate.m */; };
 		4FBB42C31477359400EA3814 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FBB42C11477359400EA3814 /* MainWindow.xib */; };
-		4FBB42CD147736D000EA3814 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB42CB147736D000EA3814 /* PageViewController.m */; };
-		4FBB42CE147736D000EA3814 /* PageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FBB42CC147736D000EA3814 /* PageViewController.xib */; };
 		4FBB42E2147748C900EA3814 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBB42E1147748C900EA3814 /* XMLReader.m */; };
-		4FBB42E4147760FD00EA3814 /* xmlfile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4FBB42E3147760FD00EA3814 /* xmlfile.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FAD2739147DD53400447292 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		4FAD273A147DD53400447292 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		4FAD273B147DD53400447292 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		4FAD274B147DD63500447292 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		4FAD274C147DD63500447292 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		4FAD274D147DD63500447292 /* GalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
 		4FBB42AB1477359400EA3814 /* Imgur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imgur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FBB42AF1477359400EA3814 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4FBB42B11477359400EA3814 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,12 +39,8 @@
 		4FBB42BE1477359400EA3814 /* ImgurAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImgurAppDelegate.h; sourceTree = "<group>"; };
 		4FBB42BF1477359400EA3814 /* ImgurAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImgurAppDelegate.m; sourceTree = "<group>"; };
 		4FBB42C21477359400EA3814 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		4FBB42CA147736D000EA3814 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
-		4FBB42CB147736D000EA3814 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
-		4FBB42CC147736D000EA3814 /* PageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageViewController.xib; sourceTree = "<group>"; };
 		4FBB42E0147748C900EA3814 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		4FBB42E1147748C900EA3814 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
-		4FBB42E3147760FD00EA3814 /* xmlfile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = xmlfile.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				4FBB42B71477359400EA3814 /* Imgur-Info.plist */,
-				4FBB42E3147760FD00EA3814 /* xmlfile.xml */,
 				4FBB42B81477359400EA3814 /* InfoPlist.strings */,
 				4FBB42BB1477359400EA3814 /* main.m */,
 				4FBB42BD1477359400EA3814 /* Imgur-Prefix.pch */,
@@ -109,9 +111,12 @@
 		4FBB42C91477369F00EA3814 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4FBB42CA147736D000EA3814 /* PageViewController.h */,
-				4FBB42CB147736D000EA3814 /* PageViewController.m */,
-				4FBB42CC147736D000EA3814 /* PageViewController.xib */,
+				4FAD2739147DD53400447292 /* RootViewController.h */,
+				4FAD273A147DD53400447292 /* RootViewController.m */,
+				4FAD273B147DD53400447292 /* RootViewController.xib */,
+				4FAD274B147DD63500447292 /* GalleryViewController.h */,
+				4FAD274C147DD63500447292 /* GalleryViewController.m */,
+				4FAD274D147DD63500447292 /* GalleryViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -174,8 +179,8 @@
 			files = (
 				4FBB42BA1477359400EA3814 /* InfoPlist.strings in Resources */,
 				4FBB42C31477359400EA3814 /* MainWindow.xib in Resources */,
-				4FBB42CE147736D000EA3814 /* PageViewController.xib in Resources */,
-				4FBB42E4147760FD00EA3814 /* xmlfile.xml in Resources */,
+				4FAD273D147DD53400447292 /* RootViewController.xib in Resources */,
+				4FAD274F147DD63500447292 /* GalleryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,8 +193,9 @@
 			files = (
 				4FBB42BC1477359400EA3814 /* main.m in Sources */,
 				4FBB42C01477359400EA3814 /* ImgurAppDelegate.m in Sources */,
-				4FBB42CD147736D000EA3814 /* PageViewController.m in Sources */,
 				4FBB42E2147748C900EA3814 /* XMLReader.m in Sources */,
+				4FAD273C147DD53400447292 /* RootViewController.m in Sources */,
+				4FAD274E147DD63500447292 /* GalleryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,14 +9,14 @@
 #import "ImgurAppDelegate.h"
 
 @implementation ImgurAppDelegate
-@synthesize viewController;
 
 @synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    self.window.rootViewController = self.viewController;
+    _rootController = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:[NSBundle mainBundle]];
+    self.window.rootViewController = _rootController;
     [self.window makeKeyAndVisible];
     return YES;
 }

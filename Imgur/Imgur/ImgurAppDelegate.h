@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PageViewController.h"
+#import "RootViewController.h"
 
 @interface ImgurAppDelegate : NSObject <UIApplicationDelegate> {
-    IBOutlet PageViewController *viewController;
+    RootViewController *_rootController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet PageViewController *viewController;
 
 @end
