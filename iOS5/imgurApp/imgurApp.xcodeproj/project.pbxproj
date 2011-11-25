@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08003EB3147F022400480B2F /* UserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 08003EB2147F022400480B2F /* UserAccount.m */; };
 		0808DCC3147EFEF0006569D2 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0808DCC2147EFEF0006569D2 /* SignInViewController.m */; };
 		088BAE33147EFC9C00CCBCA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088BAE32147EFC9C00CCBCA4 /* UIKit.framework */; };
 		088BAE35147EFC9C00CCBCA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088BAE34147EFC9C00CCBCA4 /* Foundation.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08003EB1147F022400480B2F /* UserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccount.h; sourceTree = "<group>"; };
+		08003EB2147F022400480B2F /* UserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAccount.m; sourceTree = "<group>"; };
 		0808DCC1147EFEF0006569D2 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		0808DCC2147EFEF0006569D2 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		088BAE2E147EFC9C00CCBCA4 /* imgurApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imgurApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +91,8 @@
 				0808DCC1147EFEF0006569D2 /* SignInViewController.h */,
 				0808DCC2147EFEF0006569D2 /* SignInViewController.m */,
 				088BAE39147EFC9C00CCBCA4 /* Supporting Files */,
+				08003EB1147F022400480B2F /* UserAccount.h */,
+				08003EB2147F022400480B2F /* UserAccount.m */,
 			);
 			path = imgurApp;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				088BAE43147EFC9C00CCBCA4 /* imgurAppAppDelegate.m in Sources */,
 				088BAE49147EFC9C00CCBCA4 /* imgurAppViewController.m in Sources */,
 				0808DCC3147EFEF0006569D2 /* SignInViewController.m in Sources */,
+				08003EB3147F022400480B2F /* UserAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
