@@ -11,15 +11,6 @@
 @implementation GalleryPagesController
 @synthesize pageNumberLabel;
 
-static NSArray *__pageControlColorList = nil;
-
-+ (UIColor *)pageControlColorWithIndex:(NSUInteger)index {
-    if (__pageControlColorList == nil) {
-        __pageControlColorList = [[NSArray alloc] initWithObjects:[UIColor grayColor], [UIColor greenColor], [UIColor magentaColor],
-                                  [UIColor blueColor], [UIColor orangeColor], [UIColor brownColor], [UIColor redColor], nil];
-    }
-    return [__pageControlColorList objectAtIndex:index % [__pageControlColorList count]];
-}
 - (id)initWithPageNumber:(int)page {
     if (self = [super initWithNibName:@"GalleryPagesController" bundle:nil])    {
         pageNumber = page;
@@ -34,9 +25,9 @@ static NSArray *__pageControlColorList = nil;
 
 - (void)viewDidLoad {
     pageNumberLabel.text = [NSString stringWithFormat:@"Page %d", pageNumber + 1];
-    self.view.backgroundColor = [GalleryPagesController pageControlColorWithIndex:pageNumber];
+    self.view.backgroundColor =  [UIColor blackColor];
 }
-/*
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -54,14 +45,6 @@ static NSArray *__pageControlColorList = nil;
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-}
-
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -73,6 +56,6 @@ static NSArray *__pageControlColorList = nil;
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}*/
+}
 
 @end

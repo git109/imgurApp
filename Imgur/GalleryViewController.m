@@ -33,8 +33,6 @@
 
 - (IBAction)goBack:(id)sender {
     [self.view removeFromSuperview];
-   
-  
 }
 
 
@@ -64,11 +62,6 @@
     
     [self loadScrollViewWithPage:0];
     [self loadScrollViewWithPage:1];
-    
-    
-    
-    
-    
 }
 
 - (void)loadScrollViewWithPage:(int)page {
@@ -119,8 +112,6 @@
     pageControlUsed = YES;
 }
 
-
-// here
 - (void)viewDidUnload
 {
     [super viewDidUnload];
