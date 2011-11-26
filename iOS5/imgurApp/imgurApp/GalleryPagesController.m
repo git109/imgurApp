@@ -1,8 +1,8 @@
 //
 //  GalleryPagesController.m
-//  Imgur
+//  imgurApp
 //
-//  Created by almas daumov on 11/23/11.
+//  Created by almas daumov on 11/25/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
@@ -12,26 +12,14 @@
 @synthesize pageNumberLabel;
 
 - (id)initWithPageNumber:(int)page {
-    NSLog(@"initWithPageNumber");
     if (self = [super initWithNibName:@"GalleryPagesController" bundle:nil])    {
         pageNumber = page;
     }
     return self;
 }
 
-- (void)dealloc {
-    [pageNumberLabel release];
-    [super dealloc];
-}
-
-- (void)viewDidLoad {
-    pageNumberLabel.text = [NSString stringWithFormat:@"Page %d", pageNumber + 1];
-    self.view.backgroundColor =  [UIColor blackColor];
-}
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    NSLog(@"initWithNibName");
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -45,6 +33,13 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
+}
+
+#pragma mark - View lifecycle
+
+- (void)viewDidLoad {
+    pageNumberLabel.text = [NSString stringWithFormat:@"Page %d", pageNumber + 1];
+    
 }
 
 - (void)viewDidUnload
