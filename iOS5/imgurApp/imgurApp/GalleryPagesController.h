@@ -11,6 +11,8 @@
 @interface GalleryPagesController : UIViewController {
     IBOutlet UILabel *pageNumberLabel;
     int pageNumber;
+    NSArray *pagesData;
+    NSData *_imageData;
     
     // Image Views
     IBOutlet UIImageView *_image1;
@@ -25,7 +27,8 @@
 
 }
 @property (strong, nonatomic) UILabel *pageNumberLabel;
+@property (strong, nonatomic) NSData *imageData;
 
-- (id)initWithPageNumber:(int)page;
+- (id)initWithPageNumber:(int)page andData:(NSArray *)data;
 
 @end

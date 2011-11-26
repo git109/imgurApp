@@ -17,6 +17,7 @@
 		088BAE43147EFC9C00CCBCA4 /* imgurAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 088BAE42147EFC9C00CCBCA4 /* imgurAppAppDelegate.m */; };
 		088BAE46147EFC9C00CCBCA4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088BAE44147EFC9C00CCBCA4 /* MainStoryboard.storyboard */; };
 		088BAE49147EFC9C00CCBCA4 /* imgurAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 088BAE48147EFC9C00CCBCA4 /* imgurAppViewController.m */; };
+		4F8CD45E14809C6A0017D100 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CD45D14809C6A0017D100 /* XMLReader.m */; };
 		4F9E3F2814806739008A3844 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9E3F2714806739008A3844 /* GalleryViewController.m */; };
 		4F9E3F351480688F008A3844 /* GalleryPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9E3F331480688F008A3844 /* GalleryPagesController.m */; };
 		4F9E3F361480688F008A3844 /* GalleryPagesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9E3F341480688F008A3844 /* GalleryPagesController.xib */; };
@@ -40,6 +41,8 @@
 		088BAE45147EFC9C00CCBCA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		088BAE47147EFC9C00CCBCA4 /* imgurAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imgurAppViewController.h; sourceTree = "<group>"; };
 		088BAE48147EFC9C00CCBCA4 /* imgurAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imgurAppViewController.m; sourceTree = "<group>"; };
+		4F8CD45C14809C6A0017D100 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		4F8CD45D14809C6A0017D100 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		4F9E3F2614806739008A3844 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
 		4F9E3F2714806739008A3844 /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
 		4F9E3F321480688F008A3844 /* GalleryPagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryPagesController.h; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 		088BAE38147EFC9C00CCBCA4 /* imgurApp */ = {
 			isa = PBXGroup;
 			children = (
+				4F8CD45A14809C570017D100 /* XMLReader */,
 				088BAE41147EFC9C00CCBCA4 /* imgurAppAppDelegate.h */,
 				088BAE42147EFC9C00CCBCA4 /* imgurAppAppDelegate.m */,
 				088BAE44147EFC9C00CCBCA4 /* MainStoryboard.storyboard */,
@@ -119,6 +123,15 @@
 				088BAE40147EFC9C00CCBCA4 /* imgurApp-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F8CD45A14809C570017D100 /* XMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				4F8CD45C14809C6A0017D100 /* XMLReader.h */,
+				4F8CD45D14809C6A0017D100 /* XMLReader.m */,
+			);
+			name = XMLReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +204,7 @@
 				08003EB3147F022400480B2F /* UserAccount.m in Sources */,
 				4F9E3F2814806739008A3844 /* GalleryViewController.m in Sources */,
 				4F9E3F351480688F008A3844 /* GalleryPagesController.m in Sources */,
+				4F8CD45E14809C6A0017D100 /* XMLReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

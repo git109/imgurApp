@@ -14,6 +14,9 @@
     IBOutlet UIPageControl *pageControl;
     NSMutableArray *viewControllers;
     BOOL pageControlUsed;
+    int numberOfPages;
+    
+    NSArray *pagesData;
     
 }
 
@@ -24,5 +27,9 @@
 - (IBAction)changePage:(id)sender;
 
 - (void)loadScrollViewWithPage:(int)page;
+
+- (NSMutableArray *)getDataForGalleryPage:(int)page;
+
+
 
 @end
