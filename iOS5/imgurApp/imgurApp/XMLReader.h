@@ -8,13 +8,12 @@
 {
     NSMutableArray *rootArray;
     NSMutableString *textInProgress;
-//    NSError **errorPointer;
     NSError *errorPointer;
 
 }
 
-+ (NSArray *)dictionaryForXMLData:(NSData *)data error:(NSError **)errorPointer;
-+ (NSArray *)dictionaryForXMLString:(NSString *)string error:(NSError **)errorPointer;
++ (NSArray *)dictionaryForXMLData:(NSData *)data error:(NSError *)errorPointer;
++ (NSArray *)dictionaryForXMLString:(NSString *)string error:(NSError *)errorPointer;
 
 -(id)initWithError:(NSError *)error;
 -(NSArray*)objectWithData:(NSData *)data;

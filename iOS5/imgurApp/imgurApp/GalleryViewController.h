@@ -12,7 +12,8 @@
 @interface GalleryViewController : UIViewController <UIScrollViewDelegate> {
     IBOutlet UIScrollView *scrollView;
     IBOutlet UIPageControl *pageControl;
-    NSMutableArray *viewControllers;
+    
+    NSMutableArray *_viewControllers;
     BOOL pageControlUsed;
     int numberOfPages;
     
@@ -25,11 +26,13 @@
 @property (strong, nonatomic) NSMutableArray *viewControllers;
 
 - (IBAction)changePage:(id)sender;
-
 - (void)loadScrollViewWithPage:(int)page;
+- (NSMutableArray *)getDataForGalleryPageUrl:(NSURL *)pageUrl;
+- (void)loadGalleryWithUrl:(NSURL *)url;
 
-- (NSMutableArray *)getDataForGalleryPage:(int)page;
 
-
+- (IBAction)showTopWeek:(id)sender;
+- (IBAction)showTopMonth:(id)sender;
+- (IBAction)showTopAllTime:(id)sender;
 
 @end

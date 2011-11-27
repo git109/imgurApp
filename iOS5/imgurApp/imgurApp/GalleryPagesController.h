@@ -14,16 +14,17 @@
     NSArray *pagesData;
     NSData *_imageData;
     
-    // Image Views
-    IBOutlet UIImageView *_image1;
-    IBOutlet UIImageView *_image2;
-    IBOutlet UIImageView *_image3;
-    IBOutlet UIImageView *_image4;
-    IBOutlet UIImageView *_image5;
-    IBOutlet UIImageView *_image6;
-    IBOutlet UIImageView *_image7;
-    IBOutlet UIImageView *_image8;
-    IBOutlet UIImageView *_image9;
+    IBOutlet UIButton *_button1;
+    IBOutlet UIButton *_button2;
+    IBOutlet UIButton *_button3;
+    IBOutlet UIButton *_button4;
+    IBOutlet UIButton *_button5;
+    IBOutlet UIButton *_button6;
+    IBOutlet UIButton *_button7;
+    IBOutlet UIButton *_button8;
+    IBOutlet UIButton *_button9;
+    NSMutableArray *_arrayOfButtons;
+
 
 }
 @property (strong, nonatomic) UILabel *pageNumberLabel;

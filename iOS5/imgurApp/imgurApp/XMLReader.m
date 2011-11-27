@@ -17,11 +17,10 @@ NSMutableDictionary* childDict;
 {
     XMLReader *reader = [[XMLReader alloc] initWithError:error];
     NSArray *rootArray = [reader objectWithData:data];
-//    [reader release];
     return rootArray;
 }
 
-+ (NSArray *)dictionaryForXMLString:(NSString *)string error:(NSError **)error
++ (NSArray *)dictionaryForXMLString:(NSString *)string error:(NSError *)error
 {
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     return [XMLReader dictionaryForXMLData:data error:error];
@@ -39,19 +38,10 @@ NSMutableDictionary* childDict;
     return self;
 }
 
-//- (void)dealloc
-//{
-//    [rootArray release];
-////  Fix memory leak
-////    [textInProgress release];
-//    [super dealloc];
-//}
 
 -(NSArray*)objectWithData:(NSData *)data
 {
     // Clear out any old data
-//    [rootArray release];
-//    [textInProgress release];
     rootArray = nil;
     textInProgress = nil;
     
@@ -78,7 +68,6 @@ NSMutableDictionary* childDict;
 {
 	if([elementName isEqualToString:@"item"])
 	{
-		//[childDict release], 
         childDict = nil;
 		childDict = [[NSMutableDictionary alloc] init];
 	}
