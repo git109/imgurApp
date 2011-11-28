@@ -19,6 +19,12 @@
     
     NSArray *pagesData;
     
+    IBOutlet UIButton *topWeekButton;
+    IBOutlet UIButton *topMonthButton;
+    IBOutlet UIButton *topAllTimeButton;
+    IBOutlet UIButton *hotButton; // button on the top
+    IBOutlet UIButton *topButton; // button on the top
+    
 }
 
 @property (strong, nonatomic) UIScrollView *scrollView;
@@ -30,9 +36,16 @@
 - (NSMutableArray *)getDataForGalleryPageUrl:(NSURL *)pageUrl;
 - (void)loadGalleryWithUrl:(NSURL *)url;
 
+- (void)showTopWeekPage:(int)page;
+- (void)showTopMonthPage:(int)page;
+- (void)showTopAllTimePage:(int)page;
+- (void)showHotPage:(int)page;
 
-- (IBAction)showTopWeek:(id)sender;
-- (IBAction)showTopMonth:(id)sender;
-- (IBAction)showTopAllTime:(id)sender;
+
+- (IBAction)topWeekButtonTapped;
+- (IBAction)topMonthButtonTapped;
+- (IBAction)topAllButtonTapped;
+- (IBAction)hotButtonTapped;
+
 
 @end
