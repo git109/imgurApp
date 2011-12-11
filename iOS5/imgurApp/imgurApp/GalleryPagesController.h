@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImageViewController.h"
+#import "dispatch/dispatch.h"
+
 
 @interface GalleryPagesController : UIViewController {
     IBOutlet UILabel *pageNumberLabel;
@@ -24,12 +27,21 @@
     IBOutlet UIButton *_button8;
     IBOutlet UIButton *_button9;
     NSMutableArray *_arrayOfButtons;
-
+    
+    
+    ImageViewController *imageController;
+    
+    dispatch_queue_t backgroundQueue;
 
 }
 @property (strong, nonatomic) UILabel *pageNumberLabel;
 @property (strong, nonatomic) NSData *imageData;
+@property (strong, nonatomic) ImageViewController *imageController;
+
+
 
 - (id)initWithPageNumber:(int)page andData:(NSArray *)data;
+
+- (IBAction)imageSelected:(NSArray *)pagesData;
 
 @end

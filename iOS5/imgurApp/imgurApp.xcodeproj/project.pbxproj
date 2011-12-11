@@ -17,10 +17,15 @@
 		088BAE43147EFC9C00CCBCA4 /* imgurAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 088BAE42147EFC9C00CCBCA4 /* imgurAppAppDelegate.m */; };
 		088BAE46147EFC9C00CCBCA4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088BAE44147EFC9C00CCBCA4 /* MainStoryboard.storyboard */; };
 		088BAE49147EFC9C00CCBCA4 /* imgurAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 088BAE48147EFC9C00CCBCA4 /* imgurAppViewController.m */; };
+		4F5854D514946B8B0051744A /* DataGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5854D414946B8B0051744A /* DataGetter.m */; };
 		4F8CD45E14809C6A0017D100 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8CD45D14809C6A0017D100 /* XMLReader.m */; };
 		4F9E3F2814806739008A3844 /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9E3F2714806739008A3844 /* GalleryViewController.m */; };
 		4F9E3F351480688F008A3844 /* GalleryPagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9E3F331480688F008A3844 /* GalleryPagesController.m */; };
 		4F9E3F361480688F008A3844 /* GalleryPagesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9E3F341480688F008A3844 /* GalleryPagesController.xib */; };
+		4FA71C5C148741F40027731F /* fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FA71C5B148741F40027731F /* fish.png */; };
+		4FA813101484AE1700A9C773 /* votesGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8130F1484AE1700A9C773 /* votesGraph.m */; };
+		4FB66C4714873DC000320E55 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB66C4514873DC000320E55 /* ImageViewController.m */; };
+		4FB66C4814873DC000320E55 /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB66C4614873DC000320E55 /* ImageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,8 @@
 		088BAE45147EFC9C00CCBCA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		088BAE47147EFC9C00CCBCA4 /* imgurAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imgurAppViewController.h; sourceTree = "<group>"; };
 		088BAE48147EFC9C00CCBCA4 /* imgurAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imgurAppViewController.m; sourceTree = "<group>"; };
+		4F5854D314946B8B0051744A /* DataGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataGetter.h; sourceTree = "<group>"; };
+		4F5854D414946B8B0051744A /* DataGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataGetter.m; sourceTree = "<group>"; };
 		4F8CD45C14809C6A0017D100 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		4F8CD45D14809C6A0017D100 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		4F9E3F2614806739008A3844 /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
@@ -48,6 +55,12 @@
 		4F9E3F321480688F008A3844 /* GalleryPagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryPagesController.h; sourceTree = "<group>"; };
 		4F9E3F331480688F008A3844 /* GalleryPagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryPagesController.m; sourceTree = "<group>"; };
 		4F9E3F341480688F008A3844 /* GalleryPagesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GalleryPagesController.xib; sourceTree = "<group>"; };
+		4FA71C5B148741F40027731F /* fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish.png; sourceTree = "<group>"; };
+		4FA8130E1484AE1700A9C773 /* votesGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = votesGraph.h; sourceTree = "<group>"; };
+		4FA8130F1484AE1700A9C773 /* votesGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = votesGraph.m; sourceTree = "<group>"; };
+		4FB66C4414873DC000320E55 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		4FB66C4514873DC000320E55 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		4FB66C4614873DC000320E55 /* ImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				4F8CD45A14809C570017D100 /* XMLReader */,
+				4F5854D714946B9B0051744A /* Data Getter */,
 				088BAE41147EFC9C00CCBCA4 /* imgurAppAppDelegate.h */,
 				088BAE42147EFC9C00CCBCA4 /* imgurAppAppDelegate.m */,
 				088BAE44147EFC9C00CCBCA4 /* MainStoryboard.storyboard */,
@@ -110,6 +124,11 @@
 				4F9E3F321480688F008A3844 /* GalleryPagesController.h */,
 				4F9E3F331480688F008A3844 /* GalleryPagesController.m */,
 				4F9E3F341480688F008A3844 /* GalleryPagesController.xib */,
+				4FA8130E1484AE1700A9C773 /* votesGraph.h */,
+				4FA8130F1484AE1700A9C773 /* votesGraph.m */,
+				4FB66C4414873DC000320E55 /* ImageViewController.h */,
+				4FB66C4514873DC000320E55 /* ImageViewController.m */,
+				4FB66C4614873DC000320E55 /* ImageViewController.xib */,
 			);
 			path = imgurApp;
 			sourceTree = "<group>";
@@ -119,10 +138,20 @@
 			children = (
 				088BAE3A147EFC9C00CCBCA4 /* imgurApp-Info.plist */,
 				088BAE3B147EFC9C00CCBCA4 /* InfoPlist.strings */,
+				4FA71C5B148741F40027731F /* fish.png */,
 				088BAE3E147EFC9C00CCBCA4 /* main.m */,
 				088BAE40147EFC9C00CCBCA4 /* imgurApp-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F5854D714946B9B0051744A /* Data Getter */ = {
+			isa = PBXGroup;
+			children = (
+				4F5854D314946B8B0051744A /* DataGetter.h */,
+				4F5854D414946B8B0051744A /* DataGetter.m */,
+			);
+			name = "Data Getter";
 			sourceTree = "<group>";
 		};
 		4F8CD45A14809C570017D100 /* XMLReader */ = {
@@ -187,6 +216,8 @@
 				088BAE3D147EFC9C00CCBCA4 /* InfoPlist.strings in Resources */,
 				088BAE46147EFC9C00CCBCA4 /* MainStoryboard.storyboard in Resources */,
 				4F9E3F361480688F008A3844 /* GalleryPagesController.xib in Resources */,
+				4FB66C4814873DC000320E55 /* ImageViewController.xib in Resources */,
+				4FA71C5C148741F40027731F /* fish.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +236,9 @@
 				4F9E3F2814806739008A3844 /* GalleryViewController.m in Sources */,
 				4F9E3F351480688F008A3844 /* GalleryPagesController.m in Sources */,
 				4F8CD45E14809C6A0017D100 /* XMLReader.m in Sources */,
+				4FA813101484AE1700A9C773 /* votesGraph.m in Sources */,
+				4FB66C4714873DC000320E55 /* ImageViewController.m in Sources */,
+				4F5854D514946B8B0051744A /* DataGetter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
