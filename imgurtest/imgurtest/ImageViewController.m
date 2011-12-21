@@ -8,13 +8,16 @@
 
 #import "ImageViewController.h"
 #import <dispatch/dispatch.h>
+#import "CaptionsCell.h"
+#import "XMLReader.h"
 
 
 @implementation ImageViewController
 @synthesize scrollView;
-@synthesize tableView;
+@synthesize captionsTableView;
 @synthesize imageURL;
 @synthesize imageDictionary;
+@synthesize imageTitle;
 
 
 
@@ -23,17 +26,24 @@
     [super viewDidLoad];
     backgroundQueue = dispatch_queue_create("com.almas.imgur", NULL);        
     
-    [self.navigationItem setTitle:[NSString stringWithFormat:@"%@", [self.imageDictionary valueForKey:@"title"]]];
+    [self.imageTitle setText:[NSString stringWithFormat:@"%@", [self.imageDictionary valueForKey:@"title"]]];
     [self.scrollView setContentSize:CGSizeMake(320, 640)];
     imageURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://i.imgur.com/%@%@", [self.imageDictionary valueForKey:@"hash"], [self.imageDictionary valueForKey:@"ext"]]];
     NSURLRequest *request = [NSURLRequest requestWithURL:imageURL];
     [webView loadRequest:request];
     
     
+    
+    NSString *string = [NSString stringWithFormat:@"http://imgur.com/gallery/%@.xml", [self.imageDictionary valueForKey:@"hash"]];
+    NSURL *url = [NSURL URLWithString:string];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    imageCaptionsArray = [XMLReader dictionaryForXMLData:data error:nil];
+    
+    
 }
 
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return [imageCaptionsArray count];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -45,18 +55,12 @@
 //}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"MyCell";
+    CaptionsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CaptionsCell"];
     
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"MyCell"];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] 
-                 initWithStyle:UITableViewCellStyleDefault 
-                 reuseIdentifier:CellIdentifier];
-    }
+    [cell.userNameLabel setText:[[imageCaptionsArray objectAtIndex:indexPath.row] objectForKey:@"author"]];
+    [cell.captionsTextView setText:[[imageCaptionsArray objectAtIndex:indexPath.row] objectForKey:@"caption"]];
 
-	[cell.textLabel setText:@"cell"];
-	return cell;
+    return cell;
 }
 
 

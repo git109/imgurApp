@@ -10,19 +10,22 @@
 
 @interface ImageViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     IBOutlet UIScrollView *scrollView;
-    IBOutlet UITableView *tableView;
+    IBOutlet UITableView *captionsTableView;
     NSURL *imageURL;
     dispatch_queue_t backgroundQueue;
     
     // test
     NSDictionary *imageDictionaty;
+    NSArray *imageCaptionsArray;
     IBOutlet UIWebView *webView;
+    UITextView *imageTitle;
 
 }
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UITableView *captionsTableView;
 @property (strong, nonatomic) NSURL *imageURL;
+@property (strong, nonatomic) IBOutlet UITextView *imageTitle;
 
 //test
 @property (strong, nonatomic) NSDictionary *imageDictionary;
