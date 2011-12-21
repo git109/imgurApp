@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="rai-SA-3bI">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="VH9-DA-5mp">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMy-dW-LsC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="n16-NV-qEw" customClass="MainMenuViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lMP-u8-HLT">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ROS-SC-MoT">
+                                <rect key="frame" x="123" y="102" width="74" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nsg-9B-ibj" kind="push" id="Cil-1H-CAT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SJr-h6-lFd">
+                                <rect key="frame" x="121" y="181" width="79" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Dun-2E-M8B" kind="push" id="iMl-VE-OnN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HKs-iJ-uRm">
+                                <rect key="frame" x="122" y="266" width="76" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="exY-FR-KjG" kind="push" id="G7R-EJ-FJs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Imgur" id="e3f-yx-0GK"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-161" y="68"/>
+        </scene>
+        <scene sceneID="PO2-rU-OV5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMp-EG-b7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ImageController" id="KQk-T6-CJi" customClass="ImageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W7i-fy-n3h">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="7Jv-uG-2hu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vnD-yQ-Ucx">
+                                        <rect key="frame" x="0.0" y="340" width="320" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7i8-mE-VVl">
+                                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="KQk-T6-CJi" id="UVJ-mj-ikF"/>
+                                            <outlet property="delegate" destination="KQk-T6-CJi" id="gEG-me-4jz"/>
+                                        </connections>
+                                    </tableView>
+                                    <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" id="2lW-J8-6Xz">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="332"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </webView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="scrollView" destination="7Jv-uG-2hu" id="xlE-jW-4lA"/>
+                        <outlet property="tableView" destination="vnD-yQ-Ucx" id="KkQ-l1-Zf4"/>
+                        <outlet property="webView" destination="2lW-J8-6Xz" id="6Cs-ZI-ggc"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="719" y="68"/>
+        </scene>
+        <scene sceneID="Yua-YG-DJp">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="62B-m8-Hs9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Dun-2E-M8B" customClass="GalleryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cml-Hz-vru">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="F4Q-Td-R5R">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Dun-2E-M8B" id="580-WL-SAO"/>
+                                </connections>
+                            </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="lAm-Uu-P5f">
+                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem enabled="NO" title="Hot" width="58" id="dNe-Hv-HgS">
+                                        <connections>
+                                            <action selector="showHot:" destination="Dun-2E-M8B" id="ZGb-AG-KSo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Top Week" id="fAC-dB-Urg">
+                                        <connections>
+                                            <action selector="showTopWeek:" destination="Dun-2E-M8B" id="3aq-AG-JfD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Top Month" id="YPG-61-GyG">
+                                        <connections>
+                                            <action selector="showTopMonth:" destination="Dun-2E-M8B" id="mVi-Bp-79D"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Top All" id="sL1-ga-22g">
+                                        <connections>
+                                            <action selector="showTopAll:" destination="Dun-2E-M8B" id="oNB-SA-Rlx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="fjZ-AL-z0O">
+                                <rect key="frame" x="141" y="300" width="38" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="P95-Mk-QQ4">
+                                <rect key="frame" x="0.0" y="322" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <requiredContentSizeIdentifiers>
+                                    <string>ADBannerContentSizeLandscape</string>
+                                    <string>ADBannerContentSizePortrait</string>
+                                </requiredContentSizeIdentifiers>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hot" id="u4h-km-X1I">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="c25-EN-vIe"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="hotButton" destination="dNe-Hv-HgS" id="uU9-sH-PHk"/>
+                        <outlet property="pageControl" destination="fjZ-AL-z0O" id="xhR-xf-Ja6"/>
+                        <outlet property="scrollView" destination="F4Q-Td-R5R" id="QqI-b6-YgV"/>
+                        <outlet property="topAllButton" destination="sL1-ga-22g" id="Iar-rM-OqX"/>
+                        <outlet property="topMonthButton" destination="YPG-61-GyG" id="zA0-CM-sX7"/>
+                        <outlet property="topWeekButton" destination="fAC-dB-Urg" id="j9V-2I-9oR"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="304" y="68"/>
+        </scene>
+        <scene sceneID="Orw-zy-ApP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjR-Nw-iyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Nsg-9B-ibj" customClass="SignInViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rzf-Op-NBf">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" id="ZtM-XB-cln">
+                                <rect key="frame" x="72" y="28" width="177" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" id="IgV-Sa-Dzr">
+                                <rect key="frame" x="72" y="78" width="177" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="opm-wI-LxT">
+                                <rect key="frame" x="123" y="143" width="74" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign in" id="aS7-zd-y1n"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="304" y="-529"/>
+        </scene>
+        <scene sceneID="n5z-Bd-30U">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Odz-Xh-mkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="rai-SA-3bI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="mKE-pe-DbT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n16-NV-qEw" kind="relationship" relationship="rootViewController" id="q36-Nf-buD"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-597" y="76"/>
+        </scene>
+        <scene sceneID="dl8-Hk-IgX">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WeA-Km-1X0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="exY-FR-KjG" customClass="UploadViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mte-iL-Ru1">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3" lineBreakMode="tailTruncation" minimumFontSize="10" id="Bmo-xo-yeo">
+                                <rect key="frame" x="144" y="186" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Upload" id="Y5o-YE-e2K"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="304" y="681"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="GalleryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showHot:"/>
+                <relationship kind="action" name="showTopAll:"/>
+                <relationship kind="action" name="showTopMonth:"/>
+                <relationship kind="action" name="showTopWeek:"/>
+                <relationship kind="outlet" name="hotButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="topAllButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="topMonthButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="topWeekButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="ImageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="MainMenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
+        </class>
+        <class className="SignInViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SignInViewController.h"/>
+        </class>
+        <class className="UploadViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UploadViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
