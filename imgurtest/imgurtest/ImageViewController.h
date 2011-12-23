@@ -9,25 +9,21 @@
 #import <UIKit/UIKit.h>
 
 @interface ImageViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
-    IBOutlet UIScrollView *scrollView;
-    IBOutlet UITableView *captionsTableView;
     NSURL *imageURL;
     dispatch_queue_t backgroundQueue;
-    
-    // test
     NSDictionary *imageDictionaty;
     NSArray *imageCaptionsArray;
-    IBOutlet UIWebView *webView;
     UITextView *imageTitle;
-
 }
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UITableView *captionsTableView;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) NSURL *imageURL;
-@property (strong, nonatomic) IBOutlet UITextView *imageTitle;
-
-//test
 @property (strong, nonatomic) NSDictionary *imageDictionary;
+@property (strong, nonatomic) UILabel *titleLabel;
+@property (strong, nonatomic) UIView *votesBar;
+
+- (void)createVotesBarWithUps:(int)ups andDowns:(int)downs;
 
 @end
