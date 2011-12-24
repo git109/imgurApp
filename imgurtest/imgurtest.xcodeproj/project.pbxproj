@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F7603B414A195D6006AD6EB /* CaptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7603B314A195D6006AD6EB /* CaptionsCell.m */; };
 		4FCFC80D149D37700022E7FB /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCFC80C149D37700022E7FB /* iAd.framework */; };
+		4FF9ADDB14A5A58E0083AED1 /* cellBackground3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9ADDA14A5A58E0083AED1 /* cellBackground3.png */; };
 		C147A8C7149BD28C0092BEBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C147A8C6149BD28C0092BEBB /* UIKit.framework */; };
 		C147A8C9149BD28C0092BEBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C147A8C8149BD28C0092BEBB /* Foundation.framework */; };
 		C147A8CB149BD28C0092BEBB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C147A8CA149BD28C0092BEBB /* CoreGraphics.framework */; };
@@ -30,6 +31,7 @@
 		4F7603B214A195D6006AD6EB /* CaptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptionsCell.h; sourceTree = "<group>"; };
 		4F7603B314A195D6006AD6EB /* CaptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptionsCell.m; sourceTree = "<group>"; };
 		4FCFC80C149D37700022E7FB /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		4FF9ADDA14A5A58E0083AED1 /* cellBackground3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellBackground3.png; sourceTree = "<group>"; };
 		C147A8C2149BD28C0092BEBB /* ImgurApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImgurApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C147A8C6149BD28C0092BEBB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C147A8C8149BD28C0092BEBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +116,7 @@
 				C147A8DC149BD28C0092BEBB /* MainMenuViewController.m */,
 				C147A8E3149BD69B0092BEBB /* SignInViewController.h */,
 				C147A8E4149BD69B0092BEBB /* SignInViewController.m */,
+				4FF9ADDA14A5A58E0083AED1 /* cellBackground3.png */,
 				C147A8E6149BD6A80092BEBB /* GalleryViewController.h */,
 				C147A8E7149BD6A80092BEBB /* GalleryViewController.m */,
 				C147A8E9149BD6B40092BEBB /* UploadViewController.h */,
@@ -209,6 +212,7 @@
 				C147A8D1149BD28C0092BEBB /* InfoPlist.strings in Resources */,
 				C147A8DA149BD28C0092BEBB /* MainStoryboard.storyboard in Resources */,
 				C1FC3433149C14020048A6F9 /* iphone.jpg in Resources */,
+				4FF9ADDB14A5A58E0083AED1 /* cellBackground3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -76,18 +76,19 @@
 - (void)createVotesBarWithUps:(int)ups andDowns:(int)downs {
     votesBar = [[UIView alloc] initWithFrame:CGRectMake(40, self.webView.frame.origin.y+self.webView.frame.size.height+5, 240, 20)];
     votesBar.backgroundColor = [UIColor yellowColor];
+        
+    float totalNumberOfVotes = ups + downs; 
+    float percentUps = 100/totalNumberOfVotes*ups;
+    float percentDowns = 100/totalNumberOfVotes*downs;
     
-    NSLog(@"%d %d", ups, downs);
+    UIView *upsBar = [[UIView alloc] initWithFrame:CGRectMake(0, 0, votesBar.frame.size.width/100*percentUps, votesBar.frame.size.height)];
+    upsBar.backgroundColor = [UIColor colorWithRed:0 green:0.3 blue:0 alpha:1];
     
+    UIView *downsBar = [[UIView alloc] initWithFrame:CGRectMake(upsBar.frame.size.width, 0, votesBar.frame.size.width/100*percentDowns, votesBar.frame.size.height)];
+    downsBar.backgroundColor = [UIColor colorWithRed:0.4 green:0 blue:0 alpha:1];
     
-    
-    
-    
-    
-    
-    
-    
-    
+    [votesBar addSubview:upsBar];
+    [votesBar addSubview:downsBar];
     [self.scrollView addSubview:votesBar];
 }
 
@@ -115,7 +116,7 @@
    
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 5, 300, 20)];
     label.textColor = [UIColor whiteColor];
-    label.backgroundColor = [UIColor blackColor];
+    label.backgroundColor = [UIColor clearColor];
     label.font = [UIFont systemFontOfSize:15];
     label.numberOfLines = 0;
     label.lineBreakMode = UILineBreakModeWordWrap;
@@ -131,6 +132,12 @@
     label.frame = newFrame;
     
     [cell addSubview:label];
+    
+    // Setting background image
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, expectedLabelSize.height+10)];
+    [imageView setImage:[UIImage imageNamed:@"cellBackground3.png"]];
+    
+    [cell insertSubview:imageView atIndex:0];
 
     return cell;
 }
