@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		083E1B8714B258F000E71B36 /* GTMOAuthAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 083E1B8414B258F000E71B36 /* GTMOAuthAuthentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		083E1B8814B258F000E71B36 /* GTMOAuthSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 083E1B8614B258F000E71B36 /* GTMOAuthSignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		083E1B8B14B2590200E71B36 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 083E1B8A14B2590200E71B36 /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		083E1B8F14B2591000E71B36 /* GTMOAuthViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 083E1B8D14B2591000E71B36 /* GTMOAuthViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		083E1B9014B2591000E71B36 /* GTMOAuthViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083E1B8E14B2591000E71B36 /* GTMOAuthViewTouch.xib */; };
+		083E1B9214B25AC900E71B36 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083E1B9114B25AC900E71B36 /* Security.framework */; };
+		083E1B9414B25AD500E71B36 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083E1B9314B25AD500E71B36 /* SystemConfiguration.framework */; };
 		4F7603B414A195D6006AD6EB /* CaptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7603B314A195D6006AD6EB /* CaptionsCell.m */; };
 		4FCFC80D149D37700022E7FB /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCFC80C149D37700022E7FB /* iAd.framework */; };
 		4FF9ADDB14A5A58E0083AED1 /* cellBackground3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF9ADDA14A5A58E0083AED1 /* cellBackground3.png */; };
@@ -28,6 +35,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		083E1B8314B258F000E71B36 /* GTMOAuthAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuthAuthentication.h; path = "../../../../gtmOAuth/gtm-oauth-read-only/Source/GTMOAuthAuthentication.h"; sourceTree = "<group>"; };
+		083E1B8414B258F000E71B36 /* GTMOAuthAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuthAuthentication.m; path = "../../../../gtmOAuth/gtm-oauth-read-only/Source/GTMOAuthAuthentication.m"; sourceTree = "<group>"; };
+		083E1B8514B258F000E71B36 /* GTMOAuthSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuthSignIn.h; path = "../../../../gtmOAuth/gtm-oauth-read-only/Source/GTMOAuthSignIn.h"; sourceTree = "<group>"; };
+		083E1B8614B258F000E71B36 /* GTMOAuthSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuthSignIn.m; path = "../../../../gtmOAuth/gtm-oauth-read-only/Source/GTMOAuthSignIn.m"; sourceTree = "<group>"; };
+		083E1B8914B2590200E71B36 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMHTTPFetcher.h; path = "../../../../gtmOAuth/gtm-oauth-read-only/HTTPFetcher/GTMHTTPFetcher.h"; sourceTree = "<group>"; };
+		083E1B8A14B2590200E71B36 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMHTTPFetcher.m; path = "../../../../gtmOAuth/gtm-oauth-read-only/HTTPFetcher/GTMHTTPFetcher.m"; sourceTree = "<group>"; };
+		083E1B8C14B2591000E71B36 /* GTMOAuthViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMOAuthViewControllerTouch.h; path = "../../../../gtmOAuth/gtm-oauth-read-only/Source/Touch/GTMOAuthViewControllerTouch.h"; sourceTree = "<group>"; };
+		083E1B8D14B2591000E71B36 /* GTMOAuthViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTMOAuthViewControllerTouch.m; path = "../../../../gtmOAuth/gtm-oauth-read-only/Source/Touch/GTMOAuthViewControllerTouch.m"; sourceTree = "<group>"; };
+		083E1B8E14B2591000E71B36 /* GTMOAuthViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuthViewTouch.xib; path = "../../../../gtmOAuth/gtm-oauth-read-only/Source/Touch/GTMOAuthViewTouch.xib"; sourceTree = "<group>"; };
+		083E1B9114B25AC900E71B36 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		083E1B9314B25AD500E71B36 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4F7603B214A195D6006AD6EB /* CaptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptionsCell.h; sourceTree = "<group>"; };
 		4F7603B314A195D6006AD6EB /* CaptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptionsCell.m; sourceTree = "<group>"; };
 		4FCFC80C149D37700022E7FB /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
@@ -65,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				083E1B9414B25AD500E71B36 /* SystemConfiguration.framework in Frameworks */,
+				083E1B9214B25AC900E71B36 /* Security.framework in Frameworks */,
 				4FCFC80D149D37700022E7FB /* iAd.framework in Frameworks */,
 				C147A8C7149BD28C0092BEBB /* UIKit.framework in Frameworks */,
 				C147A8C9149BD28C0092BEBB /* Foundation.framework in Frameworks */,
@@ -75,9 +95,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		083E1B8114B258CD00E71B36 /* GTMOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				083E1B8C14B2591000E71B36 /* GTMOAuthViewControllerTouch.h */,
+				083E1B8D14B2591000E71B36 /* GTMOAuthViewControllerTouch.m */,
+				083E1B8E14B2591000E71B36 /* GTMOAuthViewTouch.xib */,
+				083E1B8914B2590200E71B36 /* GTMHTTPFetcher.h */,
+				083E1B8A14B2590200E71B36 /* GTMHTTPFetcher.m */,
+				083E1B8314B258F000E71B36 /* GTMOAuthAuthentication.h */,
+				083E1B8414B258F000E71B36 /* GTMOAuthAuthentication.m */,
+				083E1B8514B258F000E71B36 /* GTMOAuthSignIn.h */,
+				083E1B8614B258F000E71B36 /* GTMOAuthSignIn.m */,
+			);
+			name = GTMOAuth;
+			sourceTree = "<group>";
+		};
 		C147A8B7149BD28C0092BEBB = {
 			isa = PBXGroup;
 			children = (
+				083E1B9314B25AD500E71B36 /* SystemConfiguration.framework */,
+				083E1B9114B25AC900E71B36 /* Security.framework */,
 				C147A8CC149BD28C0092BEBB /* imgurtest */,
 				C147A8C5149BD28C0092BEBB /* Frameworks */,
 				C147A8C3149BD28C0092BEBB /* Products */,
@@ -106,6 +144,7 @@
 		C147A8CC149BD28C0092BEBB /* imgurtest */ = {
 			isa = PBXGroup;
 			children = (
+				083E1B8114B258CD00E71B36 /* GTMOAuth */,
 				C1869D3C149C622000F12477 /* DataGetter */,
 				C1869D37149C620400F12477 /* XMLReader */,
 				C147A8D5149BD28C0092BEBB /* AppDelegate.h */,
@@ -213,6 +252,7 @@
 				C147A8DA149BD28C0092BEBB /* MainStoryboard.storyboard in Resources */,
 				C1FC3433149C14020048A6F9 /* iphone.jpg in Resources */,
 				4FF9ADDB14A5A58E0083AED1 /* cellBackground3.png in Resources */,
+				083E1B9014B2591000E71B36 /* GTMOAuthViewTouch.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +273,10 @@
 				C1869D3B149C621700F12477 /* XMLReader.m in Sources */,
 				C1869D3F149C622F00F12477 /* DataGetter.m in Sources */,
 				4F7603B414A195D6006AD6EB /* CaptionsCell.m in Sources */,
+				083E1B8714B258F000E71B36 /* GTMOAuthAuthentication.m in Sources */,
+				083E1B8814B258F000E71B36 /* GTMOAuthSignIn.m in Sources */,
+				083E1B8B14B2590200E71B36 /* GTMHTTPFetcher.m in Sources */,
+				083E1B8F14B2591000E71B36 /* GTMOAuthViewControllerTouch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

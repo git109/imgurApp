@@ -10,4 +10,8 @@
 
 @interface SignInViewController: UIViewController
 
+@property (weak, nonatomic) IBOutlet UINavigationItem *SignInLabel;
+
+- (IBAction)SignIn:(id)sender;
+
 @end
