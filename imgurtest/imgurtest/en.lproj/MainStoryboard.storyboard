@@ -103,6 +103,11 @@
                                         <rect key="frame" x="0.0" y="39" width="320" height="287"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Pem-L6-z69" appends="YES" id="J2A-Rd-M5d"/>
+                                            <outletCollection property="gestureRecognizers" destination="d0s-1d-lcA" appends="YES" id="7LO-su-qtO"/>
+                                        </connections>
                                     </webView>
                                 </subviews>
                             </scrollView>
@@ -116,6 +121,8 @@
                         <outlet property="webView" destination="2lW-J8-6Xz" id="6Cs-ZI-ggc"/>
                     </connections>
                 </viewController>
+                <swipeGestureRecognizer direction="left" id="Pem-L6-z69"/>
+                <swipeGestureRecognizer direction="right" id="d0s-1d-lcA"/>
             </objects>
             <point key="canvasLocation" x="719" y="68"/>
         </scene>
@@ -266,6 +273,53 @@
             <point key="canvasLocation" x="304" y="681"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="CaptionsCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CaptionsCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="captionsTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="userNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="GalleryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showHot:"/>
+                <relationship kind="action" name="showTopAll:"/>
+                <relationship kind="action" name="showTopMonth:"/>
+                <relationship kind="action" name="showTopWeek:"/>
+                <relationship kind="outlet" name="hotButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="topAllButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="topMonthButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="topWeekButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="ImageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="captionsTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="MainMenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
+        </class>
+        <class className="SignInViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SignInViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="SignInOut:"/>
+                <relationship kind="outlet" name="SignInLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="SignInNavigation" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="SignInOutButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="UploadViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UploadViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

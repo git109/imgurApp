@@ -20,6 +20,8 @@
 @synthesize webView;
 @synthesize titleLabel;
 @synthesize votesBar;
+@synthesize imagesInPage;
+@synthesize currentImageNumber;
 
 
 
@@ -50,8 +52,20 @@
     titleLabel.frame = newFrame;
     [self.scrollView addSubview:titleLabel];
     
+    
+    // get image height and width
+    NSInteger wwdth = [[self.imageDictionary valueForKey:@"width"] intValue];
+    NSInteger hhgth = [[self.imageDictionary valueForKey:@"height"] intValue];
+    NSLog(@"width: %i *** height: %i", wwdth, hhgth);
+    
+    // if width of image is larger than screen, then scale it to size
+    if (wwdth > 320) {
+        hhgth = ((320*hhgth)/wwdth);
+        wwdth = 320;
+    }
+    
     // Set webView position
-    CGRect scrollViewRect = CGRectMake(0, titleLabel.frame.size.height, 320, 287);
+    CGRect scrollViewRect = CGRectMake(0, titleLabel.frame.size.height, wwdth, hhgth);//320, 287);
     [self.webView setFrame:scrollViewRect];
     
     // Set tableView position

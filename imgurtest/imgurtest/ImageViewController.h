@@ -14,6 +14,8 @@
     NSDictionary *imageDictionaty;
     NSArray *imageCaptionsArray;
     UITextView *imageTitle;
+    NSArray *imagesInPage;
+    NSInteger currentImageNumber;
 }
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -23,6 +25,8 @@
 @property (strong, nonatomic) NSDictionary *imageDictionary;
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UIView *votesBar;
+@property (strong, nonatomic) NSArray *imagesInPage;
+@property (nonatomic) NSInteger currentImageNumber;
 
 - (void)createVotesBarWithUps:(int)ups andDowns:(int)downs;
 

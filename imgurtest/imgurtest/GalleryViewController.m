@@ -192,6 +192,8 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:[NSBundle mainBundle]];
     ImageViewController *imageController = [storyboard instantiateViewControllerWithIdentifier:@"ImageController"];
     imageController.imageDictionary = [pagesData objectAtIndex:imageIndex];
+    imageController.currentImageNumber = imageIndex;
+    imageController.imagesInPage = pagesData;
 
     [self.navigationController pushViewController:imageController animated:YES];
 }
