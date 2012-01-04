@@ -13,10 +13,16 @@
 static NSString *CONSUMER_KEY = @"34b8306684dd5e093fd5a28d4efd45fe04f020cd3";
 static NSString *CONSUMER_SECRET =  @"117715f869e84cb354e2db40ab0158ce";
 static NSString *SERVICE_PROVIDER = @"ImgurService";
+static NSString *appServiceName = @"Imgur App: Imgur Service";
 
 @implementation SignInViewController
 
+@synthesize authentication;
 @synthesize SignInLabel;
+@synthesize SignInOutButton;
+@synthesize SignInNavigation;
+@synthesize parser;
+@synthesize writer;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +32,65 @@ static NSString *SERVICE_PROVIDER = @"ImgurService";
     }
     return self;
 }
+
+- (void)awakeFromNib 
+{
+    // Get the saved authentication, if any, from the keychain.
+    GTMOAuthAuthentication *auth = [self imgurAuth];
+    
+    if (auth) {
+        BOOL didAuth = [GTMOAuthViewControllerTouch authorizeFromKeychainForName:appServiceName authentication:auth];
+        // if auth contained an access token, then didAuth is true
+    }
+    
+    // retain authentication object which holds the auth tokens
+    
+    // we can determine later if the auth object contains an access token
+    // by calling its -canAuthorize method
+    self.authentication = auth;
+}
+
+- (void)viewDidLoad 
+{
+    self.parser = [[SBJsonParser alloc] init];
+    self.writer = [[SBJsonWriter alloc] init];
+    self.writer.humanReadable = YES;
+    self.writer.sortKeys = YES;
+    
+    if ([self.authentication canAuthorize]) {
+        self.SignInOutButton.title = @"Sign Out";
+        self.SignInLabel.text = @"";
+        
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://api.imgur.com/2/account.json"]];
+        [self.authentication authorizeRequest:request];
+        NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+        NSString *json_string = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+        NSDictionary *account = [parser  objectWithString:json_string error:nil];
+        self.SignInNavigation.title = [[account objectForKey:@"account"] objectForKey:@"url"];
+
+    } else {
+        self.SignInOutButton.title = @"Sign In";
+        self.SignInLabel.text = @"Please sign in...";
+
+    }
+    
+}
+
+//- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+//    
+//}
+//
+//- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+//    
+//}
+//
+//- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+//    
+//}
+//
+//- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+//    
+//}
 
 - (void)didReceiveMemoryWarning
 {
@@ -37,24 +102,10 @@ static NSString *SERVICE_PROVIDER = @"ImgurService";
 
 #pragma mark - View lifecycle
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-*/
-
 - (void)viewDidUnload
 {
     [self setSignInLabel:nil];
+    [self setSignInOutButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -95,7 +146,7 @@ static NSString *SERVICE_PROVIDER = @"ImgurService";
     
     // Display the authentication view
     GTMOAuthViewControllerTouch *viewController;
-    viewController = [[GTMOAuthViewControllerTouch alloc] initWithScope:scope language:nil requestTokenURL:requestURL authorizeTokenURL:authorizeURL accessTokenURL:accessURL authentication:auth appServiceName:@"Imgur App: Imgur Service" delegate:self finishedSelector:@selector(viewController:finishedWithAuth:error:)];
+    viewController = [[GTMOAuthViewControllerTouch alloc] initWithScope:scope language:nil requestTokenURL:requestURL authorizeTokenURL:authorizeURL accessTokenURL:accessURL authentication:auth appServiceName:appServiceName delegate:self finishedSelector:@selector(viewController:finishedWithAuth:error:)];
     
     [[self navigationController] pushViewController:viewController animated:YES];
     
@@ -110,13 +161,24 @@ static NSString *SERVICE_PROVIDER = @"ImgurService";
     } else {
         // Auth succeeded
         NSLog(@"*****Auth Successful*****");
-        self.SignInLabel.title = @"Signed In";
+        self.authentication = auth;
+        self.SignInOutButton.title = @"Sign Out";
+        self.SignInLabel.text = @"";
     }
-    
 }
 
-- (IBAction)SignIn:(id)sender {
-    [self signInToImgurService];
+- (IBAction)SignInOut:(id)sender {
+    UIBarButtonItem *signInOut = sender;
+    if(signInOut.title == @"Sign Out") {
+        NSLog(@"Attempting to sign out...");
+        [GTMOAuthViewControllerTouch removeParamsFromKeychainForName:appServiceName];
+        //self.authentication = nil;
+        self.SignInOutButton.title = @"Sign In";
+        self.SignInLabel.text = @"Please sign in...";
+    } else {
+        NSLog(@"Attempting to sign in...");
+        [self signInToImgurService];
+    }
 }
 
 @end

@@ -7,11 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GTMOAuthAuthentication.h"
+#import "SBJson.h"
 
 @interface SignInViewController: UIViewController
 
-@property (weak, nonatomic) IBOutlet UINavigationItem *SignInLabel;
+@property (weak, nonatomic) IBOutlet UINavigationItem *SignInNavigation;
+@property (strong, nonatomic) GTMOAuthAuthentication *authentication;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *SignInOutButton;
+@property (weak, nonatomic) IBOutlet UILabel *SignInLabel;
+@property (strong, nonatomic) SBJsonParser *parser;
+@property (strong, nonatomic) SBJsonWriter *writer;
 
-- (IBAction)SignIn:(id)sender;
+- (IBAction)SignInOut:(id)sender;
+- (GTMOAuthAuthentication *)imgurAuth;
 
 @end

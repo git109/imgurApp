@@ -198,27 +198,27 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="opm-wI-LxT">
-                                <rect key="frame" x="123" y="144" width="74" height="37"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" text="Please sign in..." textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="20" id="9fP-B1-Lvr">
+                                <rect key="frame" x="72" y="73" width="176" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Sign in">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="SignIn:" destination="Nsg-9B-ibj" eventType="touchUpInside" id="WXv-Lg-1el"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sign in" id="aS7-zd-y1n"/>
+                    <navigationItem key="navigationItem" id="aS7-zd-y1n">
+                        <barButtonItem key="rightBarButtonItem" title="Sign In" id="SyX-lz-wty">
+                            <connections>
+                                <action selector="SignInOut:" destination="Nsg-9B-ibj" id="edc-q0-yFo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="SignInLabel" destination="aS7-zd-y1n" id="W1m-8m-MEC"/>
+                        <outlet property="SignInLabel" destination="9fP-B1-Lvr" id="euJ-k1-F70"/>
+                        <outlet property="SignInNavigation" destination="aS7-zd-y1n" id="yPd-dN-2XM"/>
+                        <outlet property="SignInOutButton" destination="SyX-lz-wty" id="End-AW-7ui"/>
                     </connections>
                 </viewController>
             </objects>
@@ -266,51 +266,6 @@
             <point key="canvasLocation" x="304" y="681"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CaptionsCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CaptionsCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="captionsTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="userNameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="GalleryViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GalleryViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showHot:"/>
-                <relationship kind="action" name="showTopAll:"/>
-                <relationship kind="action" name="showTopMonth:"/>
-                <relationship kind="action" name="showTopWeek:"/>
-                <relationship kind="outlet" name="hotButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="topAllButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="topMonthButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="topWeekButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="ImageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="captionsTableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="MainMenuViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
-        </class>
-        <class className="SignInViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SignInViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="SignIn:"/>
-                <relationship kind="outlet" name="SignInLabel" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="UploadViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UploadViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
