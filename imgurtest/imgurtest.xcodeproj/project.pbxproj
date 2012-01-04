@@ -19,10 +19,10 @@
 		0800F5DA14B4099900BD0613 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5CC14B4099900BD0613 /* SBJsonTokeniser.m */; };
 		0800F5DB14B4099900BD0613 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5CE14B4099900BD0613 /* SBJsonUTF8Stream.m */; };
 		0800F5DC14B4099900BD0613 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5D014B4099900BD0613 /* SBJsonWriter.m */; };
-		0800F5DF14B409C400BD0613 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5DE14B409C400BD0613 /* GTMHTTPFetcher.m */; };
-		0800F5E414B409D200BD0613 /* GTMOAuthAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5E114B409D200BD0613 /* GTMOAuthAuthentication.m */; };
-		0800F5E514B409D200BD0613 /* GTMOAuthSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5E314B409D200BD0613 /* GTMOAuthSignIn.m */; };
-		0800F5E914B409DF00BD0613 /* GTMOAuthViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5E714B409DF00BD0613 /* GTMOAuthViewControllerTouch.m */; };
+		0800F5DF14B409C400BD0613 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5DE14B409C400BD0613 /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0800F5E414B409D200BD0613 /* GTMOAuthAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5E114B409D200BD0613 /* GTMOAuthAuthentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0800F5E514B409D200BD0613 /* GTMOAuthSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5E314B409D200BD0613 /* GTMOAuthSignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0800F5E914B409DF00BD0613 /* GTMOAuthViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0800F5E714B409DF00BD0613 /* GTMOAuthViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0800F5EA14B409DF00BD0613 /* GTMOAuthViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0800F5E814B409DF00BD0613 /* GTMOAuthViewTouch.xib */; };
 		083E1B9214B25AC900E71B36 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083E1B9114B25AC900E71B36 /* Security.framework */; };
 		083E1B9414B25AD500E71B36 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083E1B9314B25AD500E71B36 /* SystemConfiguration.framework */; };
